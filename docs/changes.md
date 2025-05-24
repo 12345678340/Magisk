@@ -1,27 +1,27 @@
-# Magisk Changelog
+#Magisk Changelog
 
 ### v29.0
 
-- [General] Massive internal refactoring and code migration
-- [App] Support downloading module zip files with XZ compression
-- [App] Disable app animations when system animations are disabled
-- [MagiskMount] Support systemlessly deleting files with modules using blank file nodes
-- [MagiskInit] Redesign sepolicy patching and injection logic
-- [MagiskSU] Better TTY/PTY support
+- [普遍的]大规模的内部重构和代码迁移
+- [应用程序]支持下载XZ压缩模块zip文件
+- [应用程序]禁用系统动画时禁用app动画
+- [MagiskMount]支持使用空白文件节点无系统删除模块文件
+- [MagiskInit]重新设计sepolicy修补和注入逻辑
+- [MagiskSU]更好的TTY/PTY支持
 
 ### v28.1
 
-- [App] Fix stub APK download link
-- [App] Fix support for Android lower than 8.0
-- [General] Fix support for MTK Samsung devices
-- [MagiskInit] Fix a regression for 2SI devices
-- [MagiskPolicy] Fix a regression causing `overlay.d` replaced files to be not accessible
+- [应用程序]修复存根APK下载链接
+- [应用程序]修正Android支持低于8.0
+- [普遍的]修复对MTK三星设备的支持
+- [MagiskInit]修复2SI设备的回归
+- [MagiskPolicy]修正回归导致`overlay.d`无法访问被替换的文件
 
 ### v28.0
 
-- [General] Support 16k page size
-- [General] Add basic support for RISC-V (not built in releases)
-- [General] Use a minimal libc to build static executables (`magiskinit` and `magiskboot`) for smaller sizes
+- [普遍的]支持16k页面大小
+- [普遍的]添加对RISC-V的基本支持（非内置版本）
+- [普遍的]使用最小libc构建静态可执行文件`magiskinit`和`magiskboot`）较小尺寸
 - [Core] Remove unnecessary mirror for magic mount
 - [Core] Update boot image detection logic to support more devices
 - [MagiskInit] Rewrite 2SI logic for injecting `magiskinit` as `init`
